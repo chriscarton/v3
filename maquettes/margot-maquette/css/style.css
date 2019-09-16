@@ -1,0 +1,324 @@
+a:focus{
+	outline: none;
+}
+
+.margot-collection{
+    width:250px;
+    height:150px;
+    background-color:black;
+    color:silver;
+    transition:3s ease;
+}
+
+.margot-collection:hover{
+    background-color:transparent;
+}
+
+
+.margot-collection-bg{
+    background-size:cover; 
+    height:150px;
+}
+
+.margot-collection-bg-img{
+    display:none;
+}
+
+.margot-collection:hover{
+/*    background-image:url('../img/collections/fonds/retro.jpg');
+*/    /*background-color: transparent;*/
+/*    background-size: contain;*/
+}
+
+
+
+.ft_Archivo-Narrow{
+    font-family:'Archivo Narrow';
+}
+
+.margot-collection img{
+    max-width:200px;
+    padding-top:30px;
+}
+
+.silver{
+    color:silver;
+}
+
+.mg-0-auto{
+    margin: 0 auto;
+}
+
+.collection-img{
+    width:75px;
+    height:75px;
+    transition:all 1s ease;
+}
+
+.collection-img:hover{
+    /*border:5px ridge black;*/
+    /*border:5px outset black;*/
+    transform:scale(1.1);
+}
+
+.case{
+    position:relative;
+    overflow: hidden;
+    transition:background-color 2s ease-in;
+}
+
+.case-header h3{
+    transition:color 1s ease;
+}
+
+.case-header h3:hover{
+    color:white;
+}
+
+.home-button{
+    border:1px solid white;
+    color:white;
+    background-color:rgba(0,0,0,0.5);
+    transition:all 1s ease;
+}
+
+
+
+.home-button:hover{
+    background-color:white;
+    color:black;
+    transform:scale(1.1);
+}
+
+.new-product-button{
+    border:1px solid white;
+    padding:5px;
+    color:white;
+    background-color:rgba(255,255,255,0.5);
+    transition:all 1s ease;
+    font-weight: bold;
+}
+
+.new-product{
+    transform-origin:  center center;
+
+    margin-top:-20px;
+    z-index:99999;
+    padding:20px;
+    background-color:rgba(255,255,255,0.5);
+    transition:background-color 0.7s ease-in;
+}
+
+.new-product:hover{
+    background-color:rgba(255,255,255,0.9);
+    /*transform:scale(1.05);*/
+}
+
+
+
+.new-product-button:hover{
+    background-color:rgba(0,0,0,0.2);
+    color:white;
+    transform:scale(1.1);
+}
+
+
+@keyframes backgroundColorWhiteToBlack {
+    0%   {background-color:white;}
+    100% {background-color:black;}
+}
+
+.body_bg-black-to-white{
+    background-color:black;
+    animation-name:backgroundColorWhiteToBlack;
+    animation-duration:4s;
+}
+
+/* The animation code */
+@keyframes slideDown {
+    0%   {margin-top: -50px;}
+    100% {margin-top: 0px;}
+}
+
+/* The element to apply the animation to */
+.case-header {
+    animation-name: slideDown;
+    animation-duration: 1s;
+}
+
+.case-image{
+    transition:all 0.5s ease-in;
+}
+
+.case-image:hover{
+    transform:scale(1.1);
+}
+
+@keyframes slideRight {
+    0%   {margin-right: -350px;}
+    100% {margin-right: 0px;}
+}
+
+/* The element to apply the animation to */
+.case-pannel {
+    animation-name: slideRight;
+    animation-duration: 1s;
+}
+
+.case-pannel{
+    transition:background-color 1s ease;
+}
+
+.case-pannel:hover{
+    background-color:rgba(255,255,255,0.9);
+}
+
+.case:hover{
+    background-color:silver;
+}
+
+/*A gauche*/
+.grd-1{
+    position:absolute;
+    /*border:1px solid red;*/
+    height:700px;
+    width:300px;
+    width:100px;
+    background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+}
+
+/*A droite*/
+.grd-2{
+    position:absolute;
+    right:0px;
+    /*border:1px solid red;*/
+    height:700px;
+    width:300px;
+    width:100px;
+    background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+/*En haut*/
+.grd-3{
+    position:absolute;
+    top:0px;
+    /*border:1px solid red;*/
+    height:200px;
+    height:300px;
+    width:100%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(19,19,19,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(19,19,19,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(19,19,19,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(19,19,19,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(19,19,19,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(19,19,19,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00131313',GradientType=0 ); /* IE6-9 */
+}
+
+/*En bas*/
+.grd-4{
+    position:absolute;
+    bottom:0px;
+    /*border:1px solid red;*/
+    height:200px;
+    height:300px;
+    width:100%;
+background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.collection-link{
+    width:75px;
+    height:75px;
+}
+
+.bg-download{
+    background-image:url('../img/download.png');
+    background-position: 90% 90%;
+    background-repeat: no-repeat;
+    /*background-size:80%;*/
+}
+
+.case-pannel{
+    position:absolute;
+    width:55%;
+    right:0px;
+    background-color:rgba(255,255,255,0.7);
+    padding:5px;
+}
+.case-image{
+    /*position:absolute;*/
+}
+
+.hover-underline,
+.hover-underline a,
+.hover-underline a:link,
+.hover-underline a:hover,
+.hover-underline a:focus,
+.hover-underline a:visited,
+.hover-underline a:active{
+    text-decoration: underline;
+}
+
+.cols-3{
+    -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 100px 3;
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+
+    -webkit-column-rule: 1px solid black; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid black; /* Firefox */
+    column-rule: 1px solid black;
+}
+
+.bg_black{
+    background-color:black;
+}
+
+.ft_Andada-SC{
+    font-family: 'Andada SC';
+}
+
+.ft_Georgia{
+    font-family: 'Georgia';
+}
+
+.object-fit-cover{
+    
+    object-fit:cover;/*peut aussi être cover*/
+    
+}
+
+.slideshow-image{
+    
+    width:1200px;
+  
+    top:50px;
+    left:170px;
+    /*
+    */
+}
+
+body{
+    /*background-color:black;*/
+}
+

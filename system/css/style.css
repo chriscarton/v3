@@ -1,0 +1,465 @@
+@font-face {
+    font-family: 'Archivo Narrow';
+    src: url('../fonts/webfonts/ArchivoNarrow-Regular-webfont.eot');
+    src: url('../fonts/webfonts/ArchivoNarrow-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/ArchivoNarrow-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfonts/ArchivoNarrow-Regular-webfont.woff') format('woff'),
+         url('../fonts/webfonts/ArchivoNarrow-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfonts/ArchivoNarrow-Regular-webfont.svg#archivo_narrowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('../fonts/webfonts/AmaticSC-Regular-webfont.eot');
+    src: url('../fonts/webfonts/AmaticSC-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/AmaticSC-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfonts/AmaticSC-Regular-webfont.woff') format('woff'),
+         url('../fonts/webfonts/AmaticSC-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfonts/AmaticSC-Regular-webfont.svg#amatic_scregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.no-style,
+.no-style:link,
+.no-style:hover,
+.no-style:focus,
+.no-style:visited,
+.no-style:active{
+	color:#353434;
+}
+
+/*Pour enlever la bordure au clic*/
+a:link:focus{
+  outline: none;
+}
+
+.flash{
+	position:absolute;
+	width:100%;
+	z-index:0;
+	opacity:0;
+}
+
+@keyframes animBgWhiteToBlue {
+  0% {
+    /*transform: scale(0.1);*/
+    /*opacity: 0;*/
+    background-color: white;
+  }
+  /*
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  */
+  100% {
+  	background-color:#7fbbda;
+
+  }
+}
+
+/*Application*/
+
+.bgWhiteToBlue {
+
+  animation-duration: 2s;
+  animation-name: animBgWhiteToBlue;
+  background-color: #7fbbda;
+}
+
+/*Il existe aussi une syntaxe raccourcie :*/
+
+
+
+
+
+.work{
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+
+.ft_SciFly{
+	font-family: 'SciFly';
+}
+
+.ft_Amatic-SC{
+	font-family: 'Amatic SC';
+}
+
+.ft_Archivo-Narrow{
+	font-family: 'Archivo Narrow';
+}
+
+.white{
+	color:white;
+}
+.blue{
+	color:#3276B1;
+}
+body{
+	overflow-x:hidden;
+}
+.menu{
+	margin-left: 30px;
+}
+
+a.menu:hover{
+	color:white;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+#Menu{
+	width:250px;
+	height:100%;
+	right:0px;
+	z-index:9999;
+	display:none;
+}
+
+#Menu_content{
+	margin-top: 150px;
+}
+.box-shadow{
+	-moz-box-shadow: 2px 2px 2px 10px #cfcfcf;
+	-webkit-box-shadow: 2px 2px 2px 10px #cfcfcf;
+	-o-box-shadow: 2px 2px 5px 10px #cfcfcf;
+	box-shadow: 2px 2px 2px 2px #cfcfcf;
+}
+.fixed{
+	position:fixed;
+}
+.absolute{
+	position:absolute;
+}
+.relative{
+	position:relative;
+}
+
+.close,.open{
+	right:10px;
+	top:10px;
+	opacity:1;
+	width:40px;
+	height:40px;
+	text-align:center;
+	padding-top:8px;
+}
+
+.border{
+	border:1px solid black;
+}
+.bg_cardboard{
+	background-image:url('../../images/cardboard.jpg');
+	background-repeat:repeat;
+}
+
+.bg_cardboard-2{
+	background-image:url('../../images/cardboard-2.jpg');
+	background-repeat:repeat;
+}
+
+.pd-0{
+	padding:0px;
+}
+
+.pd-rt-5{
+	padding-right: 10px;
+}
+
+.pd-5{
+	padding:5px;
+}
+.pd-10{
+	padding:10px;
+}
+
+.pd-20{
+	padding:20px;
+}
+
+.bd-dashed{
+	border-style:dashed;
+}
+
+.bd-blue{
+	border-color:#3276B1;
+}
+.bd-2{
+	border-size:2px;
+}
+.bd-3{
+	border-size:3px;
+}
+
+.bd-rd-10{
+	border-radius: 10px;
+}
+
+
+.myColumn{
+	/*min-height:400px;*/
+	padding:2px;
+
+}
+.techColumn .img-responsive{	
+    margin: 0 auto;
+}
+.myIcon{
+	font-size: 5em;
+	text-align: center;
+	color:#7FBBDA;
+}
+
+.text-justify{
+	text-align: justify;
+}
+
+.block{
+	display:block;
+}
+
+.inblock{
+	display:inline-block;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.inline{
+	display:inline;
+}
+.bg_white{
+	background-color:white;
+}
+.bg_gray{
+	background-color:#D3D3D3;
+}
+.mg-tp-10{
+	margin-top:10px;
+}
+.mg-tp-15{
+	margin-top:15px;
+}
+.mg-tp-20{
+	margin-top:20px;
+}
+.mg-tp-30{
+	margin-top:30px;
+}
+.mg-tp-50{
+	margin-top:50px;
+}
+.mg-bt-20{
+	margin-bottom:20px;
+}
+.mg-bt-30{
+	margin-bottom:30px;
+}
+.mg-bt-50{
+	margin-bottom:50px;
+}
+.pd-bt-70{
+	padding-bottom:70px;
+}
+
+.rounded-3{
+	border-radius:3px;
+}
+
+.rounded-10{
+	border-radius:10px;
+}
+.rounded-15{
+	border-radius:15px;
+}
+.rounded-20{
+	border-radius:20px;
+}
+
+.bg_yellow{
+	background-color:#ffd700;
+}
+
+.bg_violet{
+	background-color:#9136B5;
+}
+
+.bg_rose{
+	background-color:#bf517f;
+}
+
+.bg_blue{
+	background-color:#3276B1;
+}
+
+.bg_maroon{
+	background-color: #9B4D00;
+}
+
+.bg_green{
+	background-color: #879900;
+}
+
+.mg-v-0{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.bg_blue_sky{
+	background-color:#7FBBDA;
+}
+
+.silver{
+	color:silver;
+}
+
+.quote{
+	display:none;
+}
+
+.bd-silver{
+	border:1px solid silver;
+}
+
+.ft_Capture-it{
+	font-family: 'Capture it';
+}
+.italic{
+	font-style: italic;
+}
+.ft_Capture-it-2{
+	font-family: 'Capture it 2';
+}
+
+.fz_12{
+	font-size: 1.2em;
+}
+
+.fz_14{
+	font-size: 1.4em;
+}
+
+.fz_16{
+	font-size: 1.6em;
+}
+
+.fz_18{
+	font-size: 1.8em;
+}
+
+.fz_2{
+	font-size: 2em;
+}
+
+
+.fz_26{
+	font-size: 2.6em;
+}
+
+
+.fz_3{
+	font-size: 3em;
+}
+
+.fz_4{
+	font-size: 4em;
+}
+
+.fz_5{
+	font-size: 5em;
+}
+.fz_8{
+	font-size: 8em;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+
+.no-style:link,
+.no-style:hover,
+.no-style:visited,
+.no-style:focus,
+.no-style:active,
+
+{
+
+}
+
+.sz_1-2{
+	font-size: 1.2em;
+}
+
+.sz_1-4{
+	font-size: 1.4em;
+}
+.sz_2{
+	font-size: 2em;
+}
+
+.sz_3{
+	font-size: 3em;
+}
+
+.sz_4{
+	font-size: 4em;
+}
+
+.sz_5{
+	font-size: 5em;
+}
+.sz_6{
+	font-size: 6em;
+}
+.rotate_-90{
+	transform:rotate(-90deg);
+}
+
+.w-70{
+	width:70%;
+}
+
+.mg-auto{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+@media (max-width: 768px){
+	.flash-image{
+		max-height: 350px;
+	}
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px){
+	.flash-image{
+		max-height: 500px;
+	}
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px){
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width:1200px) {
+
+}

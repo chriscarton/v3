@@ -1,0 +1,99 @@
+a:focus{
+    outline: none;
+}
+
+
+.slider{
+    width:100%;
+}
+
+.center p{
+    margin:5px;
+}
+
+.demo{
+    color:white;
+    text-shadow: 2px 2px 5px #888888;
+    transition:all 2s ease;
+    text-align: center;
+/*    moz-transform:rotate(-90deg);
+    transform:rotate(-90deg);*/
+    font-size:1.5em;
+
+}
+
+
+.demo:hover{
+    moz-transform:scale(1.5);
+    transform:scale(1.5);
+    text-shadow: 2px 2px 5px #2F2F2F;
+
+}
+
+.slideNumber{
+    display:none;
+}
+
+.slide{
+    position:relative;
+    float:left;
+    width:10%;
+    /*height: 400px;*/
+    /*background-color:#DADADA;*/
+    /*border:1px solid black;*/
+    margin-right:10px;
+    transition:background-color 2s ease;
+    font-family: 'Bitstream Charter';
+
+
+
+}
+
+.module-img{
+    margin-top: 20px;
+}
+
+.slideBody{
+    margin-right:10px;
+    margin-left:10px;
+    /*border:1px solid black;*/
+    font-family: 'Bitstream Charter';
+    height: 300px;
+    margin-bottom: 25px;
+}
+
+
+
+.slideTitle{
+    font-style: italic;
+    font-family: 'Bitstream Charter';
+    color:#545454;
+}
+.slideSubTitle{
+    font-style: italic;
+    font-family: 'Bitstream Charter';
+    color:#949494;
+}
+
+.sub{
+    opacity:0.5;
+    /*transition:all 2s ease;*/
+}
+
+.sub:hover{
+    /*padding-right:10px;*/
+    opacity:0.8;
+}
+
+.slideId{
+    display:none;
+}
+
+
+
+.fake-img{
+    width:400px;
+    height:300px;
+    background-color:#747474;
+}
+
